@@ -1,0 +1,28 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+
+import { E404Component } from './components/e404/e404.component';
+import { E500Component } from './components/e500/e500.component';
+import { MainNavComponent } from './components/main-nav/main-nav.component';
+import { BrowserModule } from '@angular/platform-browser';
+
+@NgModule({
+    declarations: [
+        E404Component,
+        E500Component,
+        MainNavComponent
+    ],
+    imports: [
+        CommonModule,
+        RouterModule
+    ],
+    exports: [
+        E404Component,
+        E500Component,
+        FormsModule,
+        MainNavComponent
+    ]
+})
+export class SharedModule { }

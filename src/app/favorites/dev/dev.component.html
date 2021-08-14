@@ -1,0 +1,8 @@
+<main-nav></main-nav>
+<div id='MainContent' class='container'>
+    <h1>My Favorite Dev Sites</h1>
+    <div *ngFor='let de of favList'>
+        <a [href]='de.url'>{{de.sitename}}</a>
+        <br />
+    </div>
+</div>
