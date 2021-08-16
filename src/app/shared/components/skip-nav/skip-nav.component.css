@@ -1,0 +1,16 @@
+ul.skip-nav li a {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.menu-toggle {
+    cursor: pointer;
+}
+
+.nav-link {
+    cursor: pointer;
+}
+
+    .nav-link:hover {
+            text-decoration: underline;
+    }

@@ -1,8 +1,11 @@
-<main-nav></main-nav>
-<div id='MainContent' class='container'>
-    <h1>My Favorite Short Stories</h1>
-    <div *ngFor='let sh of favList'>
-        <a [routerLink]="['/ShortStories/', sh.id]">{{sh.title}}, by {{sh.author}}</a>
-        <br />
+<div>
+    <main-nav></main-nav>
+    <skip-nav></skip-nav>
+    <div id='MainContent' class='container'>
+        <h1>My Favorite Short Stories</h1>
+        <div *ngFor='let sh of favList'>
+            <a [routerLink]="['/ShortStories/', sh.id]">{{sh.title}}, by {{sh.author}}</a>
+            <br />
+        </div>
     </div>
 </div>

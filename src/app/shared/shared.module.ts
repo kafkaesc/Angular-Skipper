@@ -7,12 +7,14 @@ import { E404Component } from './components/e404/e404.component';
 import { E500Component } from './components/e500/e500.component';
 import { MainNavComponent } from './components/main-nav/main-nav.component';
 import { BrowserModule } from '@angular/platform-browser';
+import { SkipNavComponent } from './components/skip-nav/skip-nav.component';
 
 @NgModule({
     declarations: [
         E404Component,
         E500Component,
-        MainNavComponent
+        MainNavComponent,
+        SkipNavComponent
     ],
     imports: [
         CommonModule,
@@ -22,7 +24,8 @@ import { BrowserModule } from '@angular/platform-browser';
         E404Component,
         E500Component,
         FormsModule,
-        MainNavComponent
+        MainNavComponent,
+        SkipNavComponent
     ]
 })
 export class SharedModule { }

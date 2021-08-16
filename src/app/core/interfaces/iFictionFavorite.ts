@@ -3,7 +3,7 @@ export interface IFictionFavorite {
     title: string,
     author: string,
     url?: string,
-    publishDate?: string,
+    publicationYear?: number,
     type: string,
     goodreadsUrl?: string
 }
