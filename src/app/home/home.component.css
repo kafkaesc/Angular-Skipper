@@ -1,0 +1,16 @@
+h1 {
+    margin-bottom: 0;
+}
+
+.subheading {
+    font-family: 'Droid Serif', 'Georgia', serif;
+    font-size: 1.25em;
+    font-style: italic !important;
+    margin-bottom: 16px;
+}
+
+@media screen and (min-width: 700px) {
+    .subheading {
+        font-size: 1.5em;
+    }
+}
