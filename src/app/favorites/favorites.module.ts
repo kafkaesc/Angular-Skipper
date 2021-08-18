@@ -8,6 +8,7 @@ import { DevComponent } from './dev/dev.component';
 import { ShortStoriesComponent } from './short-stories/short-stories.component';
 import { YoutubeComponent } from './youtube/youtube.component';
 import { ShortStoryDetailsComponent } from './short-story-details/short-story-details.component';
+import { ShortStoryLiComponent } from './short-story-li/short-story-li.component';
 
 const routes = [
     { path: 'Dev', component: DevComponent },
@@ -21,7 +22,9 @@ const routes = [
     [
         DevComponent,
         ShortStoriesComponent, 
-        YoutubeComponent, ShortStoryDetailsComponent
+        ShortStoryDetailsComponent, 
+        ShortStoryLiComponent,
+        YoutubeComponent
     ],
     imports: [
         CommonModule,
