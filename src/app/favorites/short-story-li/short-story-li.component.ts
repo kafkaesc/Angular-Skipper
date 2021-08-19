@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 import { IFictionFavorite } from 'src/app/core/interfaces/iFictionFavorite';
 
 @Component({
@@ -9,8 +11,12 @@ import { IFictionFavorite } from 'src/app/core/interfaces/iFictionFavorite';
 export class ShortStoryLiComponent implements OnInit {
     @Input() shortStory!: IFictionFavorite;
 
-    constructor() { }
+    constructor(private router: Router) { }
 
     ngOnInit(): void {
+    }
+
+    gotoStory(): void {
+        this.router.navigate(['/ShortStories/', this.shortStory.id]);
     }
 }

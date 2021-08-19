@@ -8,9 +8,11 @@ ul.skip-nav li a {
 }
 
 .nav-link {
+    color: #0262ef;
     cursor: pointer;
 }
 
     .nav-link:hover {
-            text-decoration: underline;
+        color: #0258d6;
+        text-decoration: underline;
     }
