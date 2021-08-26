@@ -1,0 +1,33 @@
+[
+    {
+        "id": 2501,
+        "channelName": "Babish Culinary Universe",
+        "youtuberHandle": "",
+        "channelSite": "https://www.bingingwithbabish.com/",
+        "channelUrl": "https://www.youtube.com/channel/UCJHA_jMfCvEnv-3kRjTCQXw"
+    },
+    {
+        "id": 2502,
+        "channelName": "CGP Grey",
+        "youtuberHandle": "CGPGrey",
+        "channelSite": "https://www.cgpgrey.com/",
+        "channelUrl": "https://www.youtube.com/user/cgpgrey"
+    },
+    {
+        "id": 2503,
+        "channelName": "Dreamy",
+        "channelUrl": "https://www.youtube.com/channel/UCYVyQv2rUtCMxJAFSuOSpmg/about"
+    },
+    {
+        "id": 2504,
+        "channelName": "Global Cycling Network",
+        "youtuberHandle": "globalcyclingnetwork",
+        "channelUrl": "https://www.youtube.com/user/globalcyclingnetwork"
+    },
+    {
+        "id": 2505,
+        "channelName": "Global Triathlon Network",
+        "youtuberHandle": "globaltrinetwork",
+        "channelUrl": "https://www.youtube.com/user/globaltrinetwork"
+    }
+]
