@@ -1,10 +1,6 @@
-<div>
-    <main-nav></main-nav>
-    <skip-nav></skip-nav>
-    <div id='MainContent' class='container'>
-        <h1>My Favorite Short Stories</h1>
-        <div *ngFor='let sh of favList'>
-            <short-story-li [shortStory]='sh'></short-story-li>
-        </div>
+<div id='MainContent' class='container'>
+    <h1>My Favorite Short Stories</h1>
+    <div *ngFor='let sh of favList'>
+        <short-story-li [shortStory]='sh'></short-story-li>
     </div>
 </div>

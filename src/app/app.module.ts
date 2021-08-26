@@ -11,12 +11,14 @@ import { AboutComponent } from './about/about.component';
 import { E404Component } from './shared/components/e404/e404.component';
 import { E500Component } from './shared/components/e500/e500.component';
 import { HomeComponent } from './home/home.component';
+import { MainComponent } from './main/main.component';
 
 const routes = [
     { path: '', redirectTo: 'Home', pathMatch: 'full' },
-    { path: 'Home', component: HomeComponent },
-    { path: 'About', component: AboutComponent },
-    { path: '404', component: E404Component },
+    { path: '', component: MainComponent, children: [
+        { path: 'Home', component: HomeComponent },
+        { path: 'About', component: AboutComponent }
+    ]},
     { path: '500', component: E500Component },
     { path: '**', component: E404Component }
 ];
@@ -25,7 +27,8 @@ const routes = [
     declarations: [
         AppComponent,
         HomeComponent,
-        AboutComponent
+        AboutComponent,
+        MainComponent
     ],
     imports: [
         BrowserModule,
