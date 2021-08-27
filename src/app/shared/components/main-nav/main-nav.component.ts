@@ -10,11 +10,16 @@ import { Router } from '@angular/router';
 export class MainNavComponent implements OnInit {
     mainContentLink = '';
 
-    constructor(public router: Router, private loc: Location) {
+    constructor(public router: Router) {
         let path = window.location.pathname;
         this.mainContentLink = path + '#MainContent';
      }
 
     ngOnInit(): void {
+    }
+
+    updateLink(): void {
+        let path = window.location.pathname;
+        this.mainContentLink = path + '#MainContent';
     }
 }

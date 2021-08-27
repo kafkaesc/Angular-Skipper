@@ -15,7 +15,12 @@
                     <a href='#MainContent' class='nav-link'>href</a>
                 </li>
                 <li [hidden]='!showMenu'>
-                    <a [href]='mainContentLink' class='nav-link'>[href]</a>
+                    <a [href]='mainContentLink'
+                       (focus)='updateLinks()'
+                       (mouseover)='updateLinks()'
+                       class='nav-link'>
+                        [href]
+                    </a>
                 </li>
                 <li [hidden]='!showMenu'>
                     <a routerLink='#MainContent' class='nav-link'>routerLink</a>
@@ -27,7 +32,12 @@
                     <a routerLink='.' fragment='MainContent' class='nav-link'>routerLink fragment</a>
                 </li>
                 <li [hidden]="!showMenu">
-                    <a [href]='skipMenuTogglerLink' class='nav-link'>Back</a>
+                    <a [href]='skipMenuTogglerLink'
+                       (focus)='updateLinks()'
+                       (mouseover)='updateLinks()'
+                       class='nav-link'>
+                        Back
+                    </a>
                 </li>
             </ul>
         </div>

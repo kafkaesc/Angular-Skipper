@@ -15,11 +15,18 @@ export class SkipNavComponent implements OnInit {
     constructor(public router: Router) { }
 
     ngOnInit(): void {
-        this.mainContentLink = this.router.url + '#MainContent'
-        this.skipMenuTogglerLink = this.router.url + '#SkipMenuToggler';
+        let path = window.location.pathname;
+        this.mainContentLink = path + '#MainContent'
+        this.skipMenuTogglerLink = path + '#SkipMenuToggler';
     }
 
     toggleShowmenu(): void {
         this.showMenu = !this.showMenu;
+    }
+
+    updateLinks(): void {
+        let path = window.location.pathname;
+        this.mainContentLink = path + '#MainContent';
+        this.skipMenuTogglerLink = path + '#SkipMenuToggler';
     }
 }
