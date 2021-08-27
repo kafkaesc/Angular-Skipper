@@ -1,3 +1,4 @@
+import { APP_BASE_HREF } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
@@ -37,7 +38,7 @@ const routes = [
         SharedModule,
         RouterModule.forRoot(routes)
     ],
-    providers: [],
+    providers: [{provide: APP_BASE_HREF, useValue: '/Angular-Skipper'}],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
