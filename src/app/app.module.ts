@@ -13,6 +13,8 @@ import { E500Component } from './shared/components/e500/e500.component';
 import { HomeComponent } from './home/home.component';
 import { MainComponent } from './main/main.component';
 
+import {APP_BASE_HREF} from '@angular/common';
+
 const routes = [
     { path: '', redirectTo: 'Home', pathMatch: 'full' },
     { path: '', component: MainComponent, children: [
