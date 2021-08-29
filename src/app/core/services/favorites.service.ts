@@ -1,37 +1,19 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http'; 
 
 import { ISiteFavorite } from '../interfaces/iSiteFavorite';
 import { IFictionFavorite } from '../interfaces/iFictionFavorite';
 import { IYouTubeFavorite } from '../interfaces/iYouTubeFavorite';
+import { Observable } from 'rxjs';
 
 @Injectable({
     providedIn: 'root',
 })
 export class FavoritesService {
-    constructor() { }
+    constructor(private http: HttpClient) { }
 
-    favDevSites: ISiteFavorite[] = [
-        {
-            id: 201,
-            sitename: 'Angular',
-            url: 'https://angular.io/'
-        },
-        {
-            id: 202,
-            sitename: 'Mozilla MDN Web Docs',
-            url: 'https://developer.mozilla.org/'
-        },
-        {
-            id: 203,
-            sitename: 'Web Content Accessibility Guidelines',
-            url: 'https://www.w3.org/WAI/standards-guidelines/wcag/'
-        },
-        {
-            id: 204,
-            sitename: 'Stack Overflow',
-            url: 'https://stackoverflow.com/'
-        }
-    ];
+    favDevSites: ISiteFavorite[] | null = null;
+    favYouTubeChannels: IYouTubeFavorite[] | null = null;
 
     favShortStories: IFictionFavorite[] = [
         {
@@ -84,48 +66,44 @@ export class FavoritesService {
         }
     ];
 
-    favYouTubeChannels: IYouTubeFavorite[] = [
-        {
-            id: 2501,
-            channelName: 'Babish Culinary Universe',
-            youtuberHandle: '',
-            channelSite: 'https://www.bingingwithbabish.com/',
-            channelUrl: 'https://www.youtube.com/channel/UCJHA_jMfCvEnv-3kRjTCQXw'
-        },
-        {
-            id: 2502,
-            channelName: 'CGP Grey',
-            youtuberHandle: 'CGPGrey',
-            channelSite: 'https://www.cgpgrey.com/',
-            channelUrl: 'https://www.youtube.com/user/cgpgrey'
-        },
-        {
-            id: 2503,
-            channelName: 'Dreamy',
-            channelUrl: 'https://www.youtube.com/channel/UCYVyQv2rUtCMxJAFSuOSpmg/about'
-        },
-        {
-            id: 2504,
-            channelName: 'Global Cycling Network',
-            youtuberHandle: 'globalcyclingnetwork',
-            channelUrl: 'https://www.youtube.com/user/globalcyclingnetwork'
-        },
-        {
-            id: 2505,
-            channelName: 'Global Triathlon Network',
-            youtuberHandle: 'globaltrinetwork',
-            channelUrl: 'https://www.youtube.com/user/globaltrinetwork'
-        }
-    ];
-
-    getFavoriteDevSites(): ISiteFavorite[] {
+    /* Dev Site Favorites */
+    getFavoriteDevSites(): ISiteFavorite[] | null {
         return this.favDevSites;
     }
 
+    pullFavoriteDevSites(): Observable<any> {
+        let uri: string = './assets/data/favorite-dev-sites.json';
+        this.http.get<ISiteFavorite[] | null>(uri).subscribe(
+            res => this.favDevSites = res
+        );
+        return this.http.get<ISiteFavorite[] | null>(uri);
+    }
+
+    /* YouTube Channel Favorites */
+    getFavoriteYouTubeChannels(): IYouTubeFavorite[] | null {
+        return this.favYouTubeChannels;
+    }
+
+    pullFavoriteYouTubeChannels(): Observable<any> {
+        let uri: string = './assets/data/favorite-youtube-channels.json';
+        this.http.get<IYouTubeFavorite[] | null>(uri).subscribe(
+            res => this.favYouTubeChannels = res
+        );
+        return this.http.get<IYouTubeFavorite[] | null>(uri);
+    }
+
+    /* Short Story Favorites */
     getFavoriteShortStories(): IFictionFavorite[] {
         return this.favShortStories;
     }
 
+    pullFavoriteShortStories(): Observable<any> {
+        let uri: string = './assets/data/favorite-short-stories.json';
+        return this.http.get<IFictionFavorite[] | null>(uri);
+    }
+
+    /* Fiction Specifics By ID 
+     * (Can be short story, novella, novel, etc.) */
     getFictionFavoriteById(id: number): IFictionFavorite | null {
         let result: IFictionFavorite | null = this.favShortStories
             .filter(sh => sh.id === id)
@@ -133,7 +111,8 @@ export class FavoritesService {
         return result;
     }
 
-    getFavoriteYouTubeChannels(): IYouTubeFavorite[] {
-        return this.favYouTubeChannels;
+    pullFictionFavoriteById(id: number): IFictionFavorite | null {
+        console.log('not implemented');        
+        return null;
     }
 }

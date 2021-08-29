@@ -25,8 +25,8 @@ const routes = [
     declarations: 
     [
         DevComponent,
-        ShortStoriesComponent, 
-        ShortStoryDetailsComponent, 
+        ShortStoriesComponent,
+        ShortStoryDetailsComponent,
         ShortStoryLiComponent,
         YoutubeComponent,
         FavoritesMainComponent
