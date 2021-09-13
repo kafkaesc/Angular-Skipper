@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { ISiteFavorite } from '../interfaces/iSiteFavorite';
 import { IFictionFavorite } from '../interfaces/iFictionFavorite';
 import { IYouTubeFavorite } from '../interfaces/iYouTubeFavorite';
-import { Observable } from 'rxjs';
+import { Observable, from } from 'rxjs';
 
 @Injectable({
     providedIn: 'root',
