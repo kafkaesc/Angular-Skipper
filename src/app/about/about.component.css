@@ -9,36 +9,29 @@ p {
 ul.social-links {
     list-style: none;
     margin-bottom: 32px;
+    padding: 0 16px;
 }
 
-ul.social-links li {
-    display: inline-block;
-    margin-left: 16px;
-    margin-right: 16px;
-}
+    ul.social-links li {
+        display: inline-block;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
 
-ul.social-links li img {
-    height: 32px;
-}
+    ul.social-links li img {
+        height: 32px;
+    }
 
 ul.tech-badges {
     list-style-type: none;
     margin-bottom: 32px;
 }
 
-ul.tech-badges li {
-    display: inline-block;
-    margin-left: 2px;
-    margin-right: 2px;
-}
-
-/*
-.soc-icon {
-    height: 32px;
-    margin-left: 16px;
-    margin-right: 16px;
-}
-*/
+    ul.tech-badges li {
+        display: inline-block;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
 
 .tech-badge {
     height: 64px;

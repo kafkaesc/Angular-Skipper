@@ -1,15 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'e500',
-  templateUrl: './e500.component.html',
-  styleUrls: ['./e500.component.css']
+    selector: 'e500',
+    templateUrl: './e500.component.html',
+    styleUrls: ['./e500.component.css']
 })
 export class E500Component implements OnInit {
+    constructor() { }
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+    ngOnInit(): void {
+    }
 }
