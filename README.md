@@ -1,4 +1,4 @@
-# MyFavoriteThings
+# My Favorite Things
 
 This project is a demonstration of how to implement a reliable 'skip to main content' button using the Angular framework. This button is not always necessary, but on pages with large headers it can be an important quality of life improvement for keyboard-focused and keyboard-dependent users.
 
