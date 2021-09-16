@@ -24,7 +24,8 @@ ul.social-links {
 
 ul.tech-badges {
     list-style-type: none;
-    margin-bottom: 32px;
+    margin: 0 0 32px;
+    padding: 0;
 }
 
     ul.tech-badges li {
