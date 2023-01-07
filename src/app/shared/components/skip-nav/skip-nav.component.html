@@ -1,45 +1,57 @@
 <div>
-    <div class='container'>
-        <div class='d-flex flex-wrap align-items-center justify-content-center'>
-            <ul class='nav skip-nav col-12 col-lg-auto mb-2 justify-content-center mb-md-0'>
-                <li id='SkipMenuToggler'>
-                    <a (click)='toggleShowmenu()' 
-                       (keyup.enter)='toggleShowmenu()' 
-                       tabindex='0' 
-                       class='nav-link'>
-                       <span [hidden]='showMenu'>Show Skip Demos</span>
-                       <span [hidden]='!showMenu'>Hide Skip Demos</span>
-                    </a>
-                </li>
-                <li [hidden]='!showMenu'>
-                    <a href='#MainContent' class='nav-link'>href</a>
-                </li>
-                <li [hidden]='!showMenu'>
-                    <a [href]='mainContentLink'
-                       (focus)='updateLinks()'
-                       (mouseover)='updateLinks()'
-                       class='nav-link'>
-                        [href]
-                    </a>
-                </li>
-                <li [hidden]='!showMenu'>
-                    <a routerLink='#MainContent' class='nav-link'>routerLink</a>
-                </li>
-                <li [hidden]='!showMenu'>
-                    <a [routerLink]='router.url + "#MainContent"' class='nav-link'>[routerLink]</a>
-                </li>
-                <li [hidden]='!showMenu'>
-                    <a routerLink='.' fragment='MainContent' class='nav-link'>routerLink fragment</a>
-                </li>
-                <li [hidden]="!showMenu">
-                    <a [href]='skipMenuTogglerLink'
-                       (focus)='updateLinks()'
-                       (mouseover)='updateLinks()'
-                       class='nav-link'>
-                        Back
-                    </a>
-                </li>
-            </ul>
-        </div>
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-center">
+      <ul
+        class="nav skip-nav col-12 col-lg-auto mb-2 justify-content-center mb-md-0"
+      >
+        <li id="SkipMenuToggler">
+          <a
+            (click)="toggleShowmenu()"
+            (keyup.enter)="toggleShowmenu()"
+            tabindex="0"
+            class="nav-link"
+          >
+            <span [hidden]="showMenu">Show Skip Demos</span>
+            <span [hidden]="!showMenu">Hide Skip Demos</span>
+          </a>
+        </li>
+        <li [hidden]="!showMenu">
+          <a href="#MainContent" class="nav-link">href</a>
+        </li>
+        <li [hidden]="!showMenu">
+          <a
+            [href]="mainContentLink"
+            (focus)="updateLinks()"
+            (mouseover)="updateLinks()"
+            class="nav-link"
+          >
+            [href]
+          </a>
+        </li>
+        <li [hidden]="!showMenu">
+          <a routerLink="#MainContent" class="nav-link">routerLink</a>
+        </li>
+        <li [hidden]="!showMenu">
+          <a [routerLink]="router.url + '#MainContent'" class="nav-link"
+            >[routerLink]</a
+          >
+        </li>
+        <li [hidden]="!showMenu">
+          <a routerLink="." fragment="MainContent" class="nav-link"
+            >routerLink fragment</a
+          >
+        </li>
+        <li [hidden]="!showMenu">
+          <a
+            [href]="skipMenuTogglerLink"
+            (focus)="updateLinks()"
+            (mouseover)="updateLinks()"
+            class="nav-link"
+          >
+            Back
+          </a>
+        </li>
+      </ul>
     </div>
+  </div>
 </div>

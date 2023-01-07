@@ -3,8 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-    baseHref: '/Angular-Skipper',
-    production: false
+  baseHref: '/Angular-Skipper',
+  production: false,
 };
 
 /*

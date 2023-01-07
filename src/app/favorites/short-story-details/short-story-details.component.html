@@ -1,29 +1,29 @@
-<div id='MainContent' class='container'>
-    <h1>Short Story Details</h1>
-    <div class='row'>
-        <div class='col-md-2'>
-            <label>Short Story</label>
-        </div>
-        <div class='col-md-8'>
-            {{shortStory.title}}
-        </div>
+<div id="MainContent" class="container">
+  <h1>Short Story Details</h1>
+  <div class="row">
+    <div class="col-md-2">
+      <label>Short Story</label>
     </div>
-    <div class='row'>
-        <div class='col-md-2'>
-            <label>Author</label>
-        </div>
-        <div class='col-md-8'>
-            {{shortStory.author}}
-        </div>
+    <div class="col-md-8">
+      {{ shortStory.title }}
     </div>
-    <div class='row'>
-        <div class='col-md-2'>
-            <label>Goodreads</label>
-        </div>
-        <div class='col-md-8'>
-            <a [href]='shortStory.goodreadsUrl'>
-                {{shortStory.goodreadsUrl}}
-            </a>
-        </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2">
+      <label>Author</label>
     </div>
+    <div class="col-md-8">
+      {{ shortStory.author }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2">
+      <label>Goodreads</label>
+    </div>
+    <div class="col-md-8">
+      <a [href]="shortStory.goodreadsUrl">
+        {{ shortStory.goodreadsUrl }}
+      </a>
+    </div>
+  </div>
 </div>

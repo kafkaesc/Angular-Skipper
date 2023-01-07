@@ -1,4 +1,4 @@
 export const environment = {
-    baseHref: '',
-    production: true
+  baseHref: '',
+  production: true,
 };

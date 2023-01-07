@@ -1,6 +1,11 @@
-<div *ngIf='shortStory'>
-    <div (click)='gotoStory()' (keyup.enter)='gotoStory()' tabindex='0' class='short-story-card'>
-        <p class='sh-title'>{{shortStory.title}}</p>
-        <p class='sh-author'>by {{shortStory.author}}</p>
-    </div>
+<div *ngIf="shortStory">
+  <div
+    (click)="gotoStory()"
+    (keyup.enter)="gotoStory()"
+    tabindex="0"
+    class="short-story-card"
+  >
+    <p class="sh-title">{{ shortStory.title }}</p>
+    <p class="sh-author">by {{ shortStory.author }}</p>
+  </div>
 </div>

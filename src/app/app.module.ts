@@ -14,30 +14,29 @@ import { HomeComponent } from './home/home.component';
 import { MainComponent } from './main/main.component';
 
 const routes = [
-    { path: '', redirectTo: 'Home', pathMatch: 'full' },
-    { path: '', component: MainComponent, children: [
-        { path: 'Home', component: HomeComponent },
-        { path: 'About', component: AboutComponent }
-    ]},
-    { path: '500', component: E500Component },
-    { path: '**', component: E404Component }
+  { path: '', redirectTo: 'Home', pathMatch: 'full' },
+  {
+    path: '',
+    component: MainComponent,
+    children: [
+      { path: 'Home', component: HomeComponent },
+      { path: 'About', component: AboutComponent },
+    ],
+  },
+  { path: '500', component: E500Component },
+  { path: '**', component: E404Component },
 ];
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        HomeComponent,
-        AboutComponent,
-        MainComponent
-    ],
-    imports: [
-        BrowserModule,
-        CoreModule,
-        FavoritesModule,
-        SharedModule,
-        RouterModule.forRoot(routes)
-    ],
-    providers: [],
-    bootstrap: [AppComponent]
+  declarations: [AppComponent, HomeComponent, AboutComponent, MainComponent],
+  imports: [
+    BrowserModule,
+    CoreModule,
+    FavoritesModule,
+    SharedModule,
+    RouterModule.forRoot(routes),
+  ],
+  providers: [],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

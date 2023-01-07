@@ -1,16 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
-h1, h2, h3 {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans;
+h1,
+h2,
+h3 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans;
 }
 
 h1 {
-    font-weight: 900;
+  font-weight: 900;
 }
 
 a {
-    color: #0262ef;
+  color: #0262ef;
 }
 
 a:hover {
-    color: #0258d6;
+  color: #0258d6;
 }

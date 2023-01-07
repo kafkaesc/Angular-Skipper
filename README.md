@@ -9,6 +9,7 @@ Beneath the main navigation menu is a sub-menu demonstrating different typical m
 If you are using Safari or Firefox on macOS and this site is not behaving as expected, you might want to check your system settings. You can find more details about this [here](https://stackoverflow.com/questions/11704828/how-to-allow-keyboard-focus-of-links-in-firefox/11713537#11713537).
 
 To run:
+
 1. navigate to the project folder
 1. `npm install`
 1. `ng serve -o`
