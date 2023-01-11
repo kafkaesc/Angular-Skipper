@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
 import { SharedModule } from '../shared/shared.module';
 
@@ -11,7 +11,7 @@ import { ShortStoryDetailsComponent } from './short-story-details/short-story-de
 import { ShortStoryLiComponent } from './short-story-li/short-story-li.component';
 import { FavoritesMainComponent } from './favorites-main/favorites-main.component';
 
-const routes = [
+const routes: Routes = [
   { path: '', redirectTo: 'Home', pathMatch: 'full' },
   {
     path: '',
