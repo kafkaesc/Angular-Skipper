@@ -115,7 +115,6 @@
       }
     }
   },
-  "defaultProject": "my-favorite-things",
   "cli": {
     "analytics": false
   }

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
@@ -13,7 +13,7 @@ import { E500Component } from './shared/components/e500/e500.component';
 import { HomeComponent } from './home/home.component';
 import { MainComponent } from './main/main.component';
 
-const routes = [
+const routes: Routes = [
   { path: '', redirectTo: 'Home', pathMatch: 'full' },
   {
     path: '',
