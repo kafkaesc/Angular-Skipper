@@ -1,23 +1,23 @@
 .short-story-card {
-  color: #0262ef;
-  cursor: pointer;
-  margin-top: 8px;
-  margin-bottom: 8px;
+	color: #0262ef;
+	cursor: pointer;
+	margin-top: 8px;
+	margin-bottom: 8px;
 }
 
 .short-story-card:hover,
 .short-story-card:focus {
-  color: #0258d6;
-  text-decoration: underline;
+	color: #0258d6;
+	text-decoration: underline;
 }
 
 .sh-title {
-  font-weight: 500;
-  font-size: 1.25em;
-  margin-bottom: -4px;
+	font-weight: 500;
+	font-size: 1.25em;
+	margin-bottom: -4px;
 }
 
 .sh-author {
-  font-style: italic;
-  margin-bottom: 0;
+	font-style: italic;
+	margin-bottom: 0;
 }

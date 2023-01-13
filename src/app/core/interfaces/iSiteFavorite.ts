@@ -1,6 +1,6 @@
 export interface ISiteFavorite {
-  id: number;
-  sitename: string;
-  tagline?: string;
-  url: string;
+	id: number;
+	sitename: string;
+	tagline?: string;
+	url: string;
 }

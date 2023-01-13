@@ -1,32 +1,32 @@
 #nav-logo {
-  cursor: pointer;
-  margin-right: 8px;
-  max-height: 32px;
+	cursor: pointer;
+	margin-right: 8px;
+	max-height: 32px;
 }
 
 ul.main-nav a {
-  color: #fff;
-  cursor: pointer;
+	color: #fff;
+	cursor: pointer;
 }
 
 ul.main-nav li:hover {
-  background-color: #333;
+	background-color: #333;
 }
 
 /* For keyboard navigation, hide the skip 
  * to main content button unless focused*/
 .skip-to-main-content:not(:focus) {
-  border: 0 !important;
-  height: 1px !important;
-  overflow: hidden;
-  padding: 0 !important;
-  position: absolute !important;
-  width: 1px !important;
+	border: 0 !important;
+	height: 1px !important;
+	overflow: hidden;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
 }
 
 .skip-to-main-content:focus {
-  display: inline-block !important;
-  width: auto !important;
-  height: auto !important;
-  overflow: visible;
+	display: inline-block !important;
+	width: auto !important;
+	height: auto !important;
+	overflow: visible;
 }
