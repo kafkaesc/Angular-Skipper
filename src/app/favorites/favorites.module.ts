@@ -12,28 +12,28 @@ import { ShortStoryLiComponent } from './short-story-li/short-story-li.component
 import { FavoritesMainComponent } from './favorites-main/favorites-main.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'Home', pathMatch: 'full' },
-  {
-    path: '',
-    component: FavoritesMainComponent,
-    children: [
-      { path: 'Dev', component: DevComponent },
-      { path: 'ShortStories', component: ShortStoriesComponent },
-      { path: 'ShortStories/:id', component: ShortStoryDetailsComponent },
-      { path: 'YouTube', component: YoutubeComponent },
-    ],
-  },
+	{ path: '', redirectTo: 'Home', pathMatch: 'full' },
+	{
+		path: '',
+		component: FavoritesMainComponent,
+		children: [
+			{ path: 'Dev', component: DevComponent },
+			{ path: 'ShortStories', component: ShortStoriesComponent },
+			{ path: 'ShortStories/:id', component: ShortStoryDetailsComponent },
+			{ path: 'YouTube', component: YoutubeComponent },
+		],
+	},
 ];
 
 @NgModule({
-  declarations: [
-    DevComponent,
-    ShortStoriesComponent,
-    ShortStoryDetailsComponent,
-    ShortStoryLiComponent,
-    YoutubeComponent,
-    FavoritesMainComponent,
-  ],
-  imports: [CommonModule, SharedModule, RouterModule.forChild(routes)],
+	declarations: [
+		DevComponent,
+		ShortStoriesComponent,
+		ShortStoryDetailsComponent,
+		ShortStoryLiComponent,
+		YoutubeComponent,
+		FavoritesMainComponent,
+	],
+	imports: [CommonModule, SharedModule, RouterModule.forChild(routes)],
 })
 export class FavoritesModule {}

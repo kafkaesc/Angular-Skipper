@@ -4,18 +4,18 @@ import { Router } from '@angular/router';
 import { IFictionFavorite } from 'src/app/core/interfaces/iFictionFavorite';
 
 @Component({
-  selector: 'short-story-li',
-  templateUrl: './short-story-li.component.html',
-  styleUrls: ['./short-story-li.component.css'],
+	selector: 'short-story-li',
+	templateUrl: './short-story-li.component.html',
+	styleUrls: ['./short-story-li.component.css'],
 })
 export class ShortStoryLiComponent implements OnInit {
-  @Input() shortStory!: IFictionFavorite;
+	@Input() shortStory!: IFictionFavorite;
 
-  constructor(private router: Router) {}
+	constructor(private router: Router) {}
 
-  ngOnInit(): void {}
+	ngOnInit(): void {}
 
-  gotoStory(): void {
-    this.router.navigate(['/ShortStories/', this.shortStory.id]);
-  }
+	gotoStory(): void {
+		this.router.navigate(['/ShortStories/', this.shortStory.id]);
+	}
 }

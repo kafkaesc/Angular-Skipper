@@ -1,22 +1,22 @@
 [
-  {
-    "id": 201,
-    "sitename": "Angular",
-    "url": "https://angular.io/"
-  },
-  {
-    "id": 202,
-    "sitename": "Mozilla MDN Web Docs",
-    "url": "https://developer.mozilla.org/"
-  },
-  {
-    "id": 203,
-    "sitename": "Web Content Accessibility Guidelines",
-    "url": "https://www.w3.org/WAI/standards-guidelines/wcag/"
-  },
-  {
-    "id": 204,
-    "sitename": "Stack Overflow",
-    "url": "https://stackoverflow.com/"
-  }
+	{
+		"id": 201,
+		"sitename": "Angular",
+		"url": "https://angular.io/"
+	},
+	{
+		"id": 202,
+		"sitename": "Mozilla MDN Web Docs",
+		"url": "https://developer.mozilla.org/"
+	},
+	{
+		"id": 203,
+		"sitename": "Web Content Accessibility Guidelines",
+		"url": "https://www.w3.org/WAI/standards-guidelines/wcag/"
+	},
+	{
+		"id": 204,
+		"sitename": "Stack Overflow",
+		"url": "https://stackoverflow.com/"
+	}
 ]

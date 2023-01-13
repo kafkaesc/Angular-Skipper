@@ -1,45 +1,45 @@
 h1 {
-  margin-bottom: 2px;
+	margin-bottom: 2px;
 }
 
 p {
-  margin-bottom: 32px;
+	margin-bottom: 32px;
 }
 
 ul.social-links {
-  list-style: none;
-  margin-bottom: 32px;
-  padding: 0 16px;
+	list-style: none;
+	margin-bottom: 32px;
+	padding: 0 16px;
 }
 
 ul.social-links li {
-  display: inline-block;
-  margin-left: 16px;
-  margin-right: 16px;
+	display: inline-block;
+	margin-left: 16px;
+	margin-right: 16px;
 }
 
 ul.social-links li img {
-  height: 32px;
+	height: 32px;
 }
 
 ul.tech-badges {
-  list-style-type: none;
-  margin: 0 0 32px;
-  padding: 0;
+	list-style-type: none;
+	margin: 0 0 32px;
+	padding: 0;
 }
 
 ul.tech-badges li {
-  display: inline-block;
-  margin-left: 2px;
-  margin-right: 2px;
+	display: inline-block;
+	margin-left: 2px;
+	margin-right: 2px;
 }
 
 .tech-badge {
-  height: 64px;
+	height: 64px;
 }
 
 @media screen and (min-width: 990px) {
-  .tech-badge {
-    height: 128px;
-  }
+	.tech-badge {
+		height: 128px;
+	}
 }

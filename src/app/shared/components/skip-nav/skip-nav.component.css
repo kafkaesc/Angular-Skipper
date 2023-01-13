@@ -1,18 +1,18 @@
 ul.skip-nav li a {
-    padding-top: 4px;
-    padding-bottom: 4px;
+	padding-top: 4px;
+	padding-bottom: 4px;
 }
 
 .menu-toggle {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 .nav-link {
-    color: #0262ef;
-    cursor: pointer;
+	color: #0262ef;
+	cursor: pointer;
 }
 
-    .nav-link:hover {
-        color: #0258d6;
-        text-decoration: underline;
-    }
+.nav-link:hover {
+	color: #0258d6;
+	text-decoration: underline;
+}
