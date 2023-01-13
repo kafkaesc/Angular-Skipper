@@ -1,7 +1,9 @@
 <div id="MainContent" class="container">
 	<h1>My Favorite YouTube Channels</h1>
 	<div *ngFor="let yo of favList">
-		<a [href]="yo.channelUrl">{{ yo.channelName }}</a>
+		<a [href]="yo.channelUrl" rel="noreferrer" target="_blank">{{
+			yo.channelName
+		}}</a>
 		<br />
 	</div>
 </div>
